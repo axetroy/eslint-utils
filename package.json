@@ -1,0 +1,25 @@
+{
+  "name": "eslint-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "eslint": "^9.10.0"
+  },
+  "devDependencies": {
+    "@babel/code-frame": "^7.24.7",
+    "@typescript-eslint/parser": "^8.5.0",
+    "outdent": "^0.8.0",
+    "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:update-snapshots": "npm run test -- --test-update-snapshots"
+  },
+  "author": "Axetroy <axetroy.dev@gmail.com>",
+  "license": "MIT"
+}
