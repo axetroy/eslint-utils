@@ -20,4 +20,4 @@ interface isFunctionCallOptions {
  * isFunctionCall(node, '*.foo', { maxArgCount: 2 }) // true if node is `bar.foo(1, 2)` or `baz.foo(1, 2)`
  * ```
  */
-declare function isFunctionCall(node: Node, target: string, options?: isFunctionCallOptions): boolean
+export declare function isFunctionCall(node: Node, target: string, options?: isFunctionCallOptions): boolean
