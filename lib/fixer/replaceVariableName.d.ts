@@ -15,4 +15,4 @@ export declare function replaceVariableName(
     scope: Scope.Scope,
     identifier: Identifier,
     variableName: string
-): Generator<void>
+): Generator<never, void, unknown>
