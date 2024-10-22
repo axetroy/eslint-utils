@@ -1,2 +1,5 @@
 test
 **/*.test.js
+.github
+.npmrc
+.prettierrc
