@@ -1,8 +1,13 @@
 ### A set of eslint tools for developing eslint plugins
 
-| Method                                      | Description                                        |
-| ------------------------------------------- | -------------------------------------------------- |
-| `isBooleanExpression(node, sourceCode)`     | Determines whether a node is a Boolean Expression. |
-| `isBooleanTypeAnnotation(typeAnnotation)`   | Determine whether it is a Boolean Type Annotation  |
-| `isFunctionReturnBoolean(node, sourceCode)` | Determine whether it is a Boolean return           |
-| `isInControlFlow(node)`                     | Determine whether it is in flow control position   |
+This repository contains a set of tools for developing eslint plugins. The tools are designed to help you write the best possible eslint plugins.
+
+## Installation
+
+```bash
+npm install @axetroy/eslint-utils
+```
+
+## License
+
+The [Anti-996](License)
