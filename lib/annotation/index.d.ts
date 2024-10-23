@@ -1,0 +1,1 @@
+export { isBooleanAnnotation } from './isBooleanAnnotation'
