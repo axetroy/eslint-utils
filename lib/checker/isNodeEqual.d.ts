@@ -5,4 +5,4 @@ import { Node } from 'estree'
  * @param node1
  * @param node2
  */
-export declare function isNodesEqual(node1: Node, node2: Node): boolean
+export declare function isNodeEqual(node1: Node, node2: Node): boolean
