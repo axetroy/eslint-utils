@@ -38,8 +38,8 @@ jobs:
         name: Publish to NPM
         runs-on: ubuntu-latest
         permissions:
-          contents: read
-          id-token: write
+            contents: read
+            id-token: write
         needs: [test] # 发布作业依赖测试作业
         if: startsWith(github.ref, 'refs/tags/v') && github.repository == 'axetroy/eslint-utils' # 仅在推送符合语义版本的标签时触发发布作业
 
@@ -53,7 +53,11 @@ jobs:
                   node-version: 22
                   registry-url: 'https://registry.npmjs.org'
 
-            - name: Publish
+            - name: Publish to NPM
               run: npm publish --provenance --access public --registry https://registry.npmjs.org/
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # 设置 NPM 认证令牌
+
+            - name: Sync CNPM
+              run: |
+                  curl -X PUT https://registry-direct.npmmirror.com/-/package/@axetroy/eslint-utils/syncs
