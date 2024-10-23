@@ -1,6 +1,6 @@
 {
   "name": "@axetroy/eslint-utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A set of eslint tools for developing eslint plugins",
   "main": "lib/index.js",
   "dependencies": {
