@@ -7,4 +7,4 @@ import { Node } from 'estree'
  * @param node
  * @param text
  */
-export declare function insertTextAfterLine(fixer: Rule.Fix, node: Node, text: string): void
+export declare function insertTextAfterLine(fixer: Rule.Fix, node: Node, text: string): Generator<never, void, unknown>

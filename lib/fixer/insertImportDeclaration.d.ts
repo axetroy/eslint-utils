@@ -13,4 +13,4 @@ export interface Specifier {
  * @param specifier
  * @param source
  */
-export declare function insertImportDeclaration(fixer: Rule.Fix, sourceCode: SourceCode, specifier: Specifier, source: string): void
+export declare function insertImportDeclaration(fixer: Rule.Fix, sourceCode: SourceCode, specifier: Specifier, source: string): Generator<never, void, unknown>
